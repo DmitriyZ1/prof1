@@ -1,0 +1,33 @@
+"use client"
+import { useState, useEffect, useRef } from "react";
+
+import "./page.scss"
+import classNames from "classnames";
+
+import Aboutme from "@/components/home/Aboutme";
+import Requests from "@/components/home/Requests";
+import Video from "@/components/home/Video";
+import Modal from "@/components/different/Modal";
+import Education from "@/components/home/Education";
+import Reviews from "@/components/home/Reviews";
+import Appointment from "@/components/home/Appointment";
+import Clarify from "@/components/home/Clarify";
+import Citation from "@/components/home/Citation";
+
+export default function Home() {
+  
+  return (
+    <main className='main'>
+      <div className="main__wrapper">
+        <Aboutme />
+        <Citation />
+        <Requests />
+        <Clarify />
+        <Video />
+        <Education />
+        <Reviews />
+        <Appointment />
+      </div>
+    </main>
+  );
+}
