@@ -1,13 +1,9 @@
 "use client"
-import { useState, useEffect, useRef } from "react";
 
 import "./page.scss"
-import classNames from "classnames";
-
 import Aboutme from "@/components/home/Aboutme";
 import Requests from "@/components/home/Requests";
 import Video from "@/components/home/Video";
-import Modal from "@/components/different/Modal";
 import Education from "@/components/home/Education";
 import Reviews from "@/components/home/Reviews";
 import Appointment from "@/components/home/Appointment";

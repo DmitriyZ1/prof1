@@ -177,20 +177,22 @@
         display: block;
         margin: 10px auto;
         border-radius: 20px;
-        max-height: 95vh;
+        max-width: 95vh;
+        // width: 95%;
 
-        @media screen and (max-width: 1000px) {
-            max-height: 70vh;
+        @media screen and (max-width: 1200px) {
+             width: 95%;
         }
-        @media screen and (max-width: 750px) {
-            max-height: 60vh;
-        }
-        @media screen and (max-width: 650px) {
-            max-height: 50vh;
-        }
-        @media screen and (max-width: 500px) {
-            max-height: 40vh;
-        }
+        // @media screen and (max-width: 750px) {
+        //     max-height: 60vh;
+        // }
+        // @media screen and (max-width: 650px) {
+        //     max-height: 50vh;
+        // }
+        // @media screen and (max-width: 500px) {
+        //     max-height: 40vh;
+        // }
+        
     }
 }
 

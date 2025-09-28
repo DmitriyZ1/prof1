@@ -1,7 +1,7 @@
 import "./Video.scss"
 
 export default function Video() {
-
+    
     return (
         <div className="video">
             <div className="video__content">

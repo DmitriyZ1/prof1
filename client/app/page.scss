@@ -23,6 +23,10 @@
         margin: 50px auto;
         border-radius: 30px;
         padding: 100px 0;
+        @media screen and (max-width: 499px) {
+            padding: 40px 0;
+             margin: 40px auto;
+        }
     }
 }
 

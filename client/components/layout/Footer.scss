@@ -7,19 +7,20 @@
     width: 100%;
     min-height: 158px;
     background-color: rgb(62, 62, 62);
-    
+
     &__content {
         margin: 30px auto;
         width: 85%;
         height: 100%;
         display: flex;
         justify-content: space-between;
-       
+
         @media screen and (max-width: 900px) {
             display: block;
         }
+
         @media screen and (max-width: 650px) {
-           margin-bottom: 90px;
+            margin-bottom: 90px;
         }
     }
 
@@ -39,11 +40,16 @@
 .footer-foot {
     color: rgb(197, 197, 197);
     font-family: 'Deledda', Arial, Helvetica, sans-serif;
+
     @media screen and (max-width: 900px) {
-            margin: 0 auto;
-            width: 50%;
-            text-align: center;
-        }
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+    }
+    @media screen and (max-width: 600px) {
+        width: 70%;
+        text-align: center;
+    }
 
     &__item {
         display: flex;
@@ -62,8 +68,8 @@
         margin: 0 5px;
     }
 
-    &__links{
-         @media screen and (max-width: 900px) {
+    &__links {
+        @media screen and (max-width: 900px) {
             display: none;
         }
     }
@@ -159,5 +165,9 @@
 .foot-logo {
     width: 224px;
     height: 40px;
-    border-radius: 10px;
+  
+    @media screen and (max-width: 399px) {
+        width: 190.4px;
+        height: 34px;
+    }
 }

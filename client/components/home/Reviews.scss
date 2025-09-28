@@ -41,15 +41,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        @media screen and (max-width: 1300px) {
-             height: 300px;
-        }
-        @media screen and (max-width: 800px) {
-             height: 200px;
-        }
-        @media screen and (max-width: 600px) {
-             height: 150px;
-        }
     }
     &__scrolling-right{
         right: 0px;

@@ -33,7 +33,11 @@ export default function Reviews() {
     let winW = window.innerWidth
     setTwistBlock(0)
     if (divW) {
-      if (winW < 1100) {
+      if(winW < 900){
+        setSizeElem({ width: divW / 1 - 50, margin: 25 })
+      } else if (winW < 1100) {
+        setSizeElem({ width: divW / 2 - 50, margin: 25 })
+      } else if (winW < 1300) {
         setSizeElem({ width: divW / 3 - 50, margin: 25 })
       } else {
         setSizeElem({ width: divW / 4 - 50, margin: 25 })
