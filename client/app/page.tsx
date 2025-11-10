@@ -9,6 +9,7 @@ import Reviews from "@/components/home/Reviews";
 import Appointment from "@/components/home/Appointment";
 import Clarify from "@/components/home/Clarify";
 import Citation from "@/components/home/Citation";
+import Exceptions from "@/components/home/Exceptions";
 
 export default function Home() {
   
@@ -19,6 +20,7 @@ export default function Home() {
         <Citation />
         <Requests />
         <Clarify />
+        <Exceptions />
         <Video />
         <Education />
         <Reviews />

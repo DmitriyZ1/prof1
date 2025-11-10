@@ -9,6 +9,7 @@
     margin: 20px auto;
     border-radius: 20px;
     padding: 30px;
+
     @media screen and (max-width: 420px) {
         padding: 30px 10px;
     }
@@ -41,16 +42,19 @@
             font-size: 1rem;
             line-height: 1.4rem;
         }
+
         @media screen and (max-width: 800px) {
             width: 350px;
             font-size: 1rem;
             line-height: 1.4rem;
         }
+
         @media screen and (max-width: 700px) {
             width: 300px;
             font-size: .9rem;
             line-height: 1.2rem;
         }
+
         @media screen and (max-width: 540px) {
             width: 230px;
         }
@@ -59,23 +63,28 @@
     &__form {
         width: 700px;
         margin: 0 auto;
+
         @media screen and (max-width: 900px) {
             width: 600px;
         }
+
         @media screen and (max-width: 800px) {
             width: 500px;
         }
+
         @media screen and (max-width: 700px) {
             width: 400px;
         }
+
         @media screen and (max-width: 540px) {
             width: 300px;
         }
+
         @media screen and (max-width: 420px) {
             width: 230px;
         }
-       
-       
+
+
     }
 
     &__label {
@@ -102,10 +111,12 @@
         padding: 5px;
         font-size: 1.5rem;
         border-radius: 10px;
-         @media screen and (max-width: 700px) {
+
+        @media screen and (max-width: 700px) {
             font-size: 1rem;
         }
-         @media screen and (max-width: 420px) {
+
+        @media screen and (max-width: 420px) {
             width: 90%;
         }
     }
@@ -118,7 +129,8 @@
         margin-top: 35px;
         resize: none;
         padding: 10px;
-         @media screen and (max-width: 420px) {
+
+        @media screen and (max-width: 420px) {
             width: 100%;
         }
     }
@@ -147,6 +159,41 @@
         background-color: rgb(172, 113, 36);
         color: rgb(139, 139, 139);
         transition: all 0.3s linear;
+    }
+    
+    &__button:disabled {
+        background-color: rgb(172, 113, 36);
+        color: rgb(89, 89, 89);
+        transition: all 0.3s linear;
+    }
+
+    &__check {
+        font-family: 'LTSuperiorR', Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        color: rgb(135, 135, 135);
+        text-align: center;
+        margin: 15px auto 5px auto;
+        width: 70%;
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
+
+    &__check::after {
+        content: "*";
+        margin-left: 5px;
+        color: red;
+    }
+
+    &__politic{
+        font-family: 'LTSuperiorR', Arial, Helvetica, sans-serif;
+        font-size: 0.9rem;
+        color: rgb(135, 135, 135);
+        text-align: center;
+        margin: 8px auto 5px auto;
+        width: 70%;
     }
 }
 

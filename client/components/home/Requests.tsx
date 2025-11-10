@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react"
 import { HOST } from "@/options"
+import Modal from "@/components/different/Modal"
+import parse from 'html-react-parser';
+import Descript from "../different/Descript";
 
 import "./Requests.scss"
 
@@ -8,20 +11,33 @@ interface CardsDec {
     title: string,
     pic: string,
     descripLite: string
+    descrip: string[]
 }
 
 export default function Requests() {
 
     const [cards, setCards] = useState<CardsDec[]>([])
+    const [modal, setModal] = useState<boolean>(false)
+    const [list, setList] = useState<string[]>([])
 
     useEffect(() => {   
         uploadData()
     }, [])
 
+    useEffect(() => {
+        if(!modal){
+            setList([])
+        }
+    }, [modal])
+
     async function uploadData(){
         const data = await fetch(`${HOST}/decide`)
         const result = await data.json()
         setCards(result)
+    }
+
+    const showModal = () => {
+        setModal(!modal)
     }
 
     return (
@@ -36,7 +52,9 @@ export default function Requests() {
                                     <img src={`${HOST}/pic-req/${item.pic}`} alt="pic" className="card__img" />
                                 </div>
                                 <div className="card__text">
-                                    <h3 className="card__tittle">{item.title}</h3>
+                                    <h3 className="card__tittle">{item.title}
+                                        <span className="card__detailed" onClick={() => {showModal(), setList(item.descrip)}}> Подробнее...</span>
+                                    </h3>
                                     {/* <div className="card__other">{item.descripLite}</div> */}
                                 </div>
                             </div>
@@ -44,6 +62,7 @@ export default function Requests() {
                     ))}
                 </ul>
             </div>
+            {modal && <Modal funClose={showModal}> <Descript list={list}/></Modal>}
         </div>
     )
 }

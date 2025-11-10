@@ -80,5 +80,18 @@
         font-size: 1.1rem;
         color: rgb(42, 42, 42);
     }
+
+    &__detailed{
+        font-size: 1.1rem;
+        color: blue;
+        cursor: pointer;
+    }
+}
+
+.descript{
+    width: 400px;
+    height: 100px;
+    background-color: white;
+     margin: 10px auto;
 }
 

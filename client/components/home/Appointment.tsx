@@ -3,6 +3,7 @@ import classNames from "classnames";
 import { useState, useEffect, useRef } from "react";
 import './Appointment.scss'
 import { HOST } from "@/options";
+import Link from "next/link";
 
 interface FormType {
     name: string,
@@ -20,6 +21,7 @@ interface PoputOpt {
 export default function Appointment() {
     const colorPoput = { err: "rgb(255 78 78)", good: "rgb(42 235 90)" }
     const [popupShow, setPopupShow] = useState<PoputOpt[]>([])
+    const [butDis, setButDis] = useState<boolean>(true)
     const textareaRef = useRef<HTMLTextAreaElement>(null)
     const inputNameRef = useRef<HTMLInputElement>(null)
     const inputMailRef = useRef<HTMLInputElement>(null)
@@ -97,14 +99,16 @@ export default function Appointment() {
             <Poput popupArr={popupShow} />
             <div className="appointment__content">
                 <h4 className="appointment__title">Остались вопросы?</h4>
-                <div className="appointment__text">Просто осавте мне свой номер телефона или адрес электронной почты я обязательно вам отвечу</div>
+                <div className="appointment__text">Просто оставте мне свой номер телефона или адрес электронной почты я обязательно вам отвечу</div>
                 <div className="appointment__form">
-                    <label htmlFor="form-name" className="appointment__label">Ваше имя</label>
+                    <label htmlFor="form-name" className="appointment__label">Как к вам обращаться</label>
                     <input type="text" className="appointment__input" id="form-name" ref={inputNameRef} />
                     <label htmlFor="form-mail" className="appointment__label">Адрес электронной почты или номер телефона</label>
                     <input type="text" className="appointment__input" id="form-mail" ref={inputMailRef} />
                     <textarea className="appointment__textarea" id="form-textarea" placeholder="Что вас интересует?" ref={textareaRef} />
-                    <button className="appointment__button button-placement" onClick={() => { send() }}>отправить</button>
+                    <div className="appointment__check"><input type="checkbox" checked={!butDis} onChange={() => setButDis(!butDis)} />Я согласен на обработку <Link href="">персональных данных</Link>  </div>
+                    <div className="appointment__politic"><Link target="_blank" href="/policy">Политика конфиденциальности</Link></div>
+                    <button className="appointment__button button-placement" disabled={butDis} onClick={() => { send() }}>отправить</button>
                 </div>
             </div>
         </div>

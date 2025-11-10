@@ -41,10 +41,32 @@
     }
 
     &__unavailable {
+        position: relative;
         width: 80%;
         font-family: 'Kanit', Arial, Helvetica, sans-serif;
         margin: 30px auto;
         font-size: 2rem;
         text-align: center;
+       
+        z-index: 10;
     }
+}
+
+.unavailable-pic{
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 8;
+     opacity: 0.5;
+     width: 150px;
+     height: 150px;
+}
+.unavailable-text{
+    position: relative;
+    display: block;
+    z-index: 10;
+    opacity: 0.6;
+    color: white;
 }

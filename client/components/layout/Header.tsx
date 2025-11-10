@@ -21,17 +21,17 @@ export default function Header() {
     }
 
     async function downloadVizitka() {
-        const result =  await fetch(`${HOST}/download/viza.PDF`, {
+        const result =  await fetch(`${HOST}/download/card_olga_coach.JPG`, {
             method: 'GET',
             headers: {
-                'Content-Type': 'application/pdf',
+                'Content-Type': 'image/jpeg',
             },
         })
         const blob = await result.blob()
         const url = window.URL.createObjectURL(new Blob([blob]))
         const link = document.createElement('a');
         link.href = url;
-        link.download = 'Example-PDF-file.pdf';
+        link.download = 'card_olga_coach.jpg';
         document.body.appendChild(link);
         link.click();
         if(link.parentNode) link.parentNode.removeChild(link);
@@ -75,7 +75,7 @@ export default function Header() {
                 </div>
                 <div className="header__contacts">
                     <div className="tel">
-                        {tel.title2}<span className='insert'>от 9:00 до 22:00</span>
+                        {"Я готова вам помочь"}<span className='insert'>от 10:00 до 20:00</span>
                     </div>
                     <button className='singup' onClick={() => { linkResource() }}>
                         <div className="singup__text">записаться</div>
