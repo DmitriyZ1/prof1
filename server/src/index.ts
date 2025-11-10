@@ -29,9 +29,7 @@ app.use(cors())
 app.use(express.json());
 
 
-app.get('/photo', function (req, res) {
-
-})
+app.get('/photo', function (req, res) {})
 
 requestPic('/pic-diplom/', path.dirname(__dirname) + '/part/diplomas/pics/')
 requestPic('/photo/', path.dirname(__dirname) + '/part/portret/')
