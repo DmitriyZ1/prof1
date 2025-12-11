@@ -21,7 +21,7 @@ export default function Header() {
     }
 
     async function downloadVizitka() {
-        const result =  await fetch(`${HOST}/download/card_olga_coach.JPG`, {
+        const result =  await fetch(`${HOST}/download/card.jpg`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'image/jpeg',
@@ -75,7 +75,7 @@ export default function Header() {
                 </div>
                 <div className="header__contacts">
                     <div className="tel">
-                        {"Я готова вам помочь"}<span className='insert'>от 10:00 до 20:00</span>
+                        {"Я готова вам помочь"}<span className='insert'>с 10:00 до 20:00</span>
                     </div>
                     <button className='singup' onClick={() => { linkResource() }}>
                         <div className="singup__text">записаться</div>

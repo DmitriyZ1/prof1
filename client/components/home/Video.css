@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Deledda";
+  src: url("./fonts/ofont.ru_Deledda.ttf");
+}
+@font-face {
+  font-family: "DeleddaO";
+  src: url("./fonts/ofont.ru_DeleddaO.ttf");
+}
+@font-face {
+  font-family: "LTSuperiorR";
+  src: url("./fonts/LTSuperior-Regular.otf");
+}
+@font-face {
+  font-family: "LTSuperiorM";
+  src: url("./fonts/LTSuperior-Medium.otf");
+}
+@font-face {
+  font-family: "LTSuperiorB";
+  src: url("./fonts/LTSuperior-Bold.otf");
+}
+@font-face {
+  font-family: "Kanit";
+  src: url("./fonts/Kanit_Cyrillic.ttf");
+}
+@font-face {
+  font-family: "MagnetTrialM";
+  src: url("./fonts/MagnetTrial-Medium.ttf");
+}
+@font-face {
+  font-family: "MagnetTrialL";
+  src: url("./fonts/MagnetTrial-Light.ttf");
+}
+@font-face {
+  font-family: "FuturaRg";
+  src: url("./fonts/FuturaRg.ttf");
+}
+@font-face {
+  font-family: "Florisel";
+  src: url("./fonts/Floriselscript.ttf");
+}
+@font-face {
+  font-family: "Kindentosca";
+  src: url("./fonts/Kindentosca.otf");
+}
+@font-face {
+  font-family: "Propisi";
+  src: url("./fonts/Propisi.ttf");
+}
+@font-face {
+  font-family: "Arctika";
+  src: url("./fonts/Arc.otf");
+}
+.video {
+  margin-top: 25px;
+  width: 100%;
+}
+.video__content {
+  width: 740px;
+  height: 425px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .video__content {
+    width: 517px;
+    height: 296px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .video__content {
+    width: 413px;
+    height: 236px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .video__content {
+    width: 331px;
+    height: 189px;
+  }
+}
+.video__content iframe {
+  display: block;
+  margin: 10px auto;
+  border-radius: 20px;
+  width: 95%;
+  height: 95%;
+}
+.video__unavailable {
+  position: relative;
+  width: 80%;
+  font-family: "Kanit", Arial, Helvetica, sans-serif;
+  margin: 30px auto;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 10;
+}
+
+.unavailable-pic {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 8;
+  opacity: 0.5;
+  width: 150px;
+  height: 150px;
+}
+
+.unavailable-text {
+  position: relative;
+  display: block;
+  z-index: 10;
+  opacity: 0.6;
+  color: white;
+}/*# sourceMappingURL=Video.css.map */

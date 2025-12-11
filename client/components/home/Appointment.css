@@ -1,0 +1,246 @@
+@font-face {
+  font-family: "Deledda";
+  src: url("./fonts/ofont.ru_Deledda.ttf");
+}
+@font-face {
+  font-family: "DeleddaO";
+  src: url("./fonts/ofont.ru_DeleddaO.ttf");
+}
+@font-face {
+  font-family: "LTSuperiorR";
+  src: url("./fonts/LTSuperior-Regular.otf");
+}
+@font-face {
+  font-family: "LTSuperiorM";
+  src: url("./fonts/LTSuperior-Medium.otf");
+}
+@font-face {
+  font-family: "LTSuperiorB";
+  src: url("./fonts/LTSuperior-Bold.otf");
+}
+@font-face {
+  font-family: "Kanit";
+  src: url("./fonts/Kanit_Cyrillic.ttf");
+}
+@font-face {
+  font-family: "MagnetTrialM";
+  src: url("./fonts/MagnetTrial-Medium.ttf");
+}
+@font-face {
+  font-family: "MagnetTrialL";
+  src: url("./fonts/MagnetTrial-Light.ttf");
+}
+@font-face {
+  font-family: "FuturaRg";
+  src: url("./fonts/FuturaRg.ttf");
+}
+@font-face {
+  font-family: "Florisel";
+  src: url("./fonts/Floriselscript.ttf");
+}
+@font-face {
+  font-family: "Kindentosca";
+  src: url("./fonts/Kindentosca.otf");
+}
+@font-face {
+  font-family: "Propisi";
+  src: url("./fonts/Propisi.ttf");
+}
+@font-face {
+  font-family: "Arctika";
+  src: url("./fonts/Arc.otf");
+}
+.appointment {
+  position: relative;
+  width: 90%;
+  background-color: rgb(255, 242, 200);
+  margin: 20px auto;
+  border-radius: 20px;
+  padding: 30px;
+}
+@media screen and (max-width: 420px) {
+  .appointment {
+    padding: 30px 10px;
+  }
+}
+.appointment__content {
+  text-align: center;
+}
+.appointment__title {
+  font-family: "MagnetTrialM", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 900px) {
+  .appointment__title {
+    font-size: 1.6rem;
+  }
+}
+.appointment__text {
+  font-family: "LTSuperiorR", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  margin: 10px;
+  color: rgb(74, 74, 74);
+  width: 500px;
+  margin: 20px auto;
+  line-height: 1.6rem;
+}
+@media screen and (max-width: 900px) {
+  .appointment__text {
+    width: 400px;
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .appointment__text {
+    width: 350px;
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .appointment__text {
+    width: 300px;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .appointment__text {
+    width: 230px;
+  }
+}
+.appointment__form {
+  width: 700px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 900px) {
+  .appointment__form {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .appointment__form {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .appointment__form {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .appointment__form {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .appointment__form {
+    width: 230px;
+  }
+}
+.appointment__label {
+  font-family: "LTSuperiorR", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: rgb(135, 135, 135);
+  display: block;
+  text-align: start;
+  margin: 15px auto 5px auto;
+  width: 70%;
+}
+.appointment__label::after {
+  content: "*";
+  margin-left: 5px;
+  color: red;
+}
+.appointment__input {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  height: 2rem;
+  padding: 5px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+@media screen and (max-width: 700px) {
+  .appointment__input {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .appointment__input {
+    width: 90%;
+  }
+}
+.appointment__textarea {
+  width: 85%;
+  height: 200px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  margin-top: 35px;
+  resize: none;
+  padding: 10px;
+}
+@media screen and (max-width: 420px) {
+  .appointment__textarea {
+    width: 100%;
+  }
+}
+.appointment__button {
+  margin: 0 20px;
+  padding: 5px;
+  font-size: 1.2rem;
+  background-color: rgb(255, 167, 52);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  height: 42px;
+  width: 150px;
+  cursor: pointer;
+  display: block;
+  font-family: "LTSuperiorM", Arial, Helvetica, sans-serif;
+}
+.appointment__button:hover {
+  background-color: rgb(223, 147, 47);
+  color: rgb(220, 220, 220);
+  transition: all 0.3s linear;
+}
+.appointment__button:active {
+  background-color: rgb(172, 113, 36);
+  color: rgb(139, 139, 139);
+  transition: all 0.3s linear;
+}
+.appointment__button:disabled {
+  background-color: rgb(172, 113, 36);
+  color: rgb(89, 89, 89);
+  transition: all 0.3s linear;
+}
+.appointment__check {
+  font-family: "LTSuperiorR", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: rgb(135, 135, 135);
+  text-align: center;
+  margin: 15px auto 5px auto;
+  width: 70%;
+}
+.appointment__check input[type=checkbox] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.appointment__check::after {
+  content: "*";
+  margin-left: 5px;
+  color: red;
+}
+.appointment__politic {
+  font-family: "LTSuperiorR", Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  color: rgb(135, 135, 135);
+  text-align: center;
+  margin: 8px auto 5px auto;
+  width: 70%;
+}
+
+.button-placement {
+  margin: 20px auto;
+  font-family: "LTSuperiorR", Arial, Helvetica, sans-serif;
+}/*# sourceMappingURL=Appointment.css.map */

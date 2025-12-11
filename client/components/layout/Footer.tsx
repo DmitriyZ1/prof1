@@ -9,7 +9,7 @@ export default function Footer() {
 
     async function downloadVizitka() {
         console.log("hello")
-        const result =  await fetch(`${HOST}/download/card_olga_coach.JPG`, {
+        const result =  await fetch(`${HOST}/download/card.jpg`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'image/jpeg',

@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "Deledda";
+  src: url("./fonts/ofont.ru_Deledda.ttf");
+}
+@font-face {
+  font-family: "DeleddaO";
+  src: url("./fonts/ofont.ru_DeleddaO.ttf");
+}
+@font-face {
+  font-family: "LTSuperiorR";
+  src: url("./fonts/LTSuperior-Regular.otf");
+}
+@font-face {
+  font-family: "LTSuperiorM";
+  src: url("./fonts/LTSuperior-Medium.otf");
+}
+@font-face {
+  font-family: "LTSuperiorB";
+  src: url("./fonts/LTSuperior-Bold.otf");
+}
+@font-face {
+  font-family: "Kanit";
+  src: url("./fonts/Kanit_Cyrillic.ttf");
+}
+@font-face {
+  font-family: "MagnetTrialM";
+  src: url("./fonts/MagnetTrial-Medium.ttf");
+}
+@font-face {
+  font-family: "MagnetTrialL";
+  src: url("./fonts/MagnetTrial-Light.ttf");
+}
+@font-face {
+  font-family: "FuturaRg";
+  src: url("./fonts/FuturaRg.ttf");
+}
+@font-face {
+  font-family: "Florisel";
+  src: url("./fonts/Floriselscript.ttf");
+}
+@font-face {
+  font-family: "Kindentosca";
+  src: url("./fonts/Kindentosca.otf");
+}
+@font-face {
+  font-family: "Propisi";
+  src: url("./fonts/Propisi.ttf");
+}
+@font-face {
+  font-family: "Arctika";
+  src: url("./fonts/Arc.otf");
+}
+.education {
+  padding: 40px 0;
+  width: 90%;
+  background-color: rgb(255, 242, 200);
+  margin: 100px auto;
+  border-radius: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.education__content {
+  width: 80%;
+  display: flex;
+}
+@media screen and (max-width: 1100px) {
+  .education__content {
+    display: block;
+  }
+}
+.education__diplomas {
+  width: 420px;
+  min-width: 420px;
+  height: 420px;
+  border: 1px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 20px;
+}
+@media screen and (max-width: 1100px) {
+  .education__diplomas {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  .education__diplomas {
+    width: 336px;
+    height: 336px;
+    min-width: 336px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .education__diplomas {
+    width: 268px;
+    height: 268px;
+    min-width: 268px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .education__diplomas {
+    width: 227px;
+    height: 227px;
+    min-width: 227px;
+  }
+}
+.education__text {
+  margin-left: 50px;
+}
+@media screen and (max-width: 1100px) {
+  .education__text {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+}
+.education__tittle {
+  font-family: "Kanit", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 1200px) {
+  .education__tittle {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .education__tittle {
+    font-size: 1.1rem;
+  }
+}
+.education__other {
+  font-family: "FuturaRg", Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+
+.slider {
+  width: 420px;
+  height: 420px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 650px) {
+  .slider {
+    width: 336px;
+    height: 336px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .slider {
+    width: 268px;
+    height: 268px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .slider {
+    width: 227px;
+    height: 227px;
+  }
+}
+.slider__control {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.slider__right {
+  left: 22px;
+}
+.slider__left {
+  right: 22px;
+}
+.slider__scroll-slider {
+  position: relative;
+  right: 22px;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid rgb(234, 234, 234);
+}
+@media screen and (max-width: 500px) {
+  .slider__scroll-slider {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.pic {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+}
+.pic__jpg {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+}
+.pic__tittle {
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 30px;
+  font-size: 2rem;
+  font-family: "Kanit", Arial, Helvetica, sans-serif;
+  z-index: 200;
+}
+.pic__show {
+  -o-object-fit: fill;
+     object-fit: fill;
+  display: block;
+  margin: 10px auto;
+  border-radius: 20px;
+  max-width: 95vh;
+}
+@media screen and (max-width: 1200px) {
+  .pic__show {
+    width: 95%;
+  }
+}
+
+.other-list {
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 1200px) {
+  .other-list {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .other-list {
+    font-size: 0.8rem;
+  }
+}
+.other-list__item {
+  margin-bottom: 5px;
+}/*# sourceMappingURL=Education.css.map */

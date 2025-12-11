@@ -23,7 +23,7 @@
         top: 40px;
         right: 40px;
         cursor: pointer;
-
+        z-index: 300;
         img {
             filter: invert(48%) sepia(5%) saturate(5%) hue-rotate(334deg) brightness(90%) contrast(84%);
         }

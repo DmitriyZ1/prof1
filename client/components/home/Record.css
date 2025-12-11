@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Deledda";
+  src: url("./fonts/ofont.ru_Deledda.ttf");
+}
+@font-face {
+  font-family: "DeleddaO";
+  src: url("./fonts/ofont.ru_DeleddaO.ttf");
+}
+@font-face {
+  font-family: "LTSuperiorR";
+  src: url("./fonts/LTSuperior-Regular.otf");
+}
+@font-face {
+  font-family: "LTSuperiorM";
+  src: url("./fonts/LTSuperior-Medium.otf");
+}
+@font-face {
+  font-family: "LTSuperiorB";
+  src: url("./fonts/LTSuperior-Bold.otf");
+}
+@font-face {
+  font-family: "Kanit";
+  src: url("./fonts/Kanit_Cyrillic.ttf");
+}
+@font-face {
+  font-family: "MagnetTrialM";
+  src: url("./fonts/MagnetTrial-Medium.ttf");
+}
+@font-face {
+  font-family: "MagnetTrialL";
+  src: url("./fonts/MagnetTrial-Light.ttf");
+}
+@font-face {
+  font-family: "FuturaRg";
+  src: url("./fonts/FuturaRg.ttf");
+}
+@font-face {
+  font-family: "Florisel";
+  src: url("./fonts/Floriselscript.ttf");
+}
+@font-face {
+  font-family: "Kindentosca";
+  src: url("./fonts/Kindentosca.otf");
+}
+@font-face {
+  font-family: "Propisi";
+  src: url("./fonts/Propisi.ttf");
+}
+@font-face {
+  font-family: "Arctika";
+  src: url("./fonts/Arc.otf");
+}
+.record {
+  position: relative;
+  margin: 100px auto;
+  width: 700px;
+  height: 400px;
+  background-color: rgb(255, 242, 200);
+  padding: 20px 30px;
+}
+.record__content {
+  width: 100%;
+  margin: 15px auto;
+}
+.record__explanation {
+  font-family: "Deledda", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.record__exit {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  right: -12px;
+  top: -12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-record {
+  width: 630px;
+  margin: 20px auto;
+}
+.form-record__label {
+  font-family: "Deledda", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: rgb(135, 135, 135);
+  display: block;
+  text-align: start;
+  margin: 15px auto 5px auto;
+  width: 70%;
+}
+.form-record__input {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  height: 2rem;
+  padding: 5px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+.form-record__label::after {
+  content: "*";
+  margin-left: 5px;
+  color: red;
+}
+.form-record__button {
+  margin: 0 20px;
+  padding: 5px;
+  font-size: 1.2rem;
+  background-color: rgb(255, 167, 52);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  height: 42px;
+  width: 150px;
+  cursor: pointer;
+  display: block;
+}
+.form-record__button:hover {
+  background-color: rgb(223, 147, 47);
+  color: rgb(220, 220, 220);
+  transition: all 0.3s linear;
+}
+.form-record__button:active {
+  background-color: rgb(172, 113, 36);
+  color: rgb(139, 139, 139);
+  transition: all 0.3s linear;
+}
+
+.button-how {
+  margin: 42px auto;
+  font-family: "Deledda", Arial, Helvetica, sans-serif;
+}/*# sourceMappingURL=Record.css.map */

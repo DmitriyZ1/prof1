@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Deledda";
+  src: url("./fonts/ofont.ru_Deledda.ttf");
+}
+@font-face {
+  font-family: "DeleddaO";
+  src: url("./fonts/ofont.ru_DeleddaO.ttf");
+}
+@font-face {
+  font-family: "LTSuperiorR";
+  src: url("./fonts/LTSuperior-Regular.otf");
+}
+@font-face {
+  font-family: "LTSuperiorM";
+  src: url("./fonts/LTSuperior-Medium.otf");
+}
+@font-face {
+  font-family: "LTSuperiorB";
+  src: url("./fonts/LTSuperior-Bold.otf");
+}
+@font-face {
+  font-family: "Kanit";
+  src: url("./fonts/Kanit_Cyrillic.ttf");
+}
+@font-face {
+  font-family: "MagnetTrialM";
+  src: url("./fonts/MagnetTrial-Medium.ttf");
+}
+@font-face {
+  font-family: "MagnetTrialL";
+  src: url("./fonts/MagnetTrial-Light.ttf");
+}
+@font-face {
+  font-family: "FuturaRg";
+  src: url("./fonts/FuturaRg.ttf");
+}
+@font-face {
+  font-family: "Florisel";
+  src: url("./fonts/Floriselscript.ttf");
+}
+@font-face {
+  font-family: "Kindentosca";
+  src: url("./fonts/Kindentosca.otf");
+}
+@font-face {
+  font-family: "Propisi";
+  src: url("./fonts/Propisi.ttf");
+}
+@font-face {
+  font-family: "Arctika";
+  src: url("./fonts/Arc.otf");
+}
+.requests {
+  width: 90%;
+  margin: 40px auto;
+  padding-top: 10px;
+}
+.requests__content {
+  width: 100%;
+}
+.requests__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 150px;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  list-style-type: none;
+}
+@media screen and (max-width: 950px) {
+  .requests__list {
+    display: block;
+  }
+}
+.requests__item {
+  position: relative;
+}
+@media screen and (max-width: 950px) {
+  .requests__item {
+    margin: 20px 0;
+  }
+}
+.requests__title {
+  margin: 40px auto;
+  text-align: center;
+  font-family: "Kanit", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 1200px) {
+  .requests__title {
+    font-size: 1.4rem;
+  }
+}
+
+.card {
+  display: flex;
+  max-width: 100%;
+}
+.card__pic {
+  width: 122px;
+  height: 122px;
+  min-width: 122px;
+  border-radius: 20px;
+  background-color: red;
+}
+@media screen and (max-width: 1200px) {
+  .card__pic {
+    width: 97px;
+    height: 97px;
+    min-width: 97px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card__pic {
+    width: 82px;
+    height: 82px;
+    min-width: 82px;
+  }
+}
+.card__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.card__text {
+  margin-left: 20px;
+  font-family: "LTSuperiorM", Arial, Helvetica, sans-serif;
+  line-height: 1.2;
+}
+.card__tittle {
+  font-family: "LTSuperiorM", Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 1200px) {
+  .card__tittle {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card__tittle {
+    font-size: 0.8rem;
+  }
+}
+.card__other {
+  font-size: 1.1rem;
+  color: rgb(42, 42, 42);
+}
+.card__detailed {
+  font-size: 1.1rem;
+  color: blue;
+  cursor: pointer;
+}
+
+.descript {
+  width: 400px;
+  height: 100px;
+  background-color: white;
+  margin: 10px auto;
+}/*# sourceMappingURL=Requests.css.map */

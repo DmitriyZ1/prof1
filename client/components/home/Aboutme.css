@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "Deledda";
+  src: url("./fonts/ofont.ru_Deledda.ttf");
+}
+@font-face {
+  font-family: "DeleddaO";
+  src: url("./fonts/ofont.ru_DeleddaO.ttf");
+}
+@font-face {
+  font-family: "LTSuperiorR";
+  src: url("./fonts/LTSuperior-Regular.otf");
+}
+@font-face {
+  font-family: "LTSuperiorM";
+  src: url("./fonts/LTSuperior-Medium.otf");
+}
+@font-face {
+  font-family: "LTSuperiorB";
+  src: url("./fonts/LTSuperior-Bold.otf");
+}
+@font-face {
+  font-family: "Kanit";
+  src: url("./fonts/Kanit_Cyrillic.ttf");
+}
+@font-face {
+  font-family: "MagnetTrialM";
+  src: url("./fonts/MagnetTrial-Medium.ttf");
+}
+@font-face {
+  font-family: "MagnetTrialL";
+  src: url("./fonts/MagnetTrial-Light.ttf");
+}
+@font-face {
+  font-family: "FuturaRg";
+  src: url("./fonts/FuturaRg.ttf");
+}
+@font-face {
+  font-family: "Florisel";
+  src: url("./fonts/Floriselscript.ttf");
+}
+@font-face {
+  font-family: "Kindentosca";
+  src: url("./fonts/Kindentosca.otf");
+}
+@font-face {
+  font-family: "Propisi";
+  src: url("./fonts/Propisi.ttf");
+}
+@font-face {
+  font-family: "Arctika";
+  src: url("./fonts/Arc.otf");
+}
+.aboutme {
+  padding: 40px 0;
+  width: 90%;
+  background-color: rgb(255, 242, 200);
+  margin: 0 auto;
+  border-radius: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutme__content {
+  overflow: hidden;
+  margin: 20px auto;
+  width: 90%;
+  height: 80%;
+  display: flex;
+}
+@media screen and (max-width: 915px) {
+  .aboutme__content {
+    display: block;
+  }
+}
+.aboutme__text {
+  width: 65%;
+  height: 100%;
+}
+@media screen and (max-width: 915px) {
+  .aboutme__text {
+    width: 100%;
+  }
+}
+.aboutme__title {
+  font-family: "Kanit", Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  margin: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .aboutme__title {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .aboutme__title {
+    font-size: 1.8rem;
+  }
+}
+.aboutme__descrip {
+  font-family: "MagnetTrialL", Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  margin: 10px;
+  line-height: 1.8rem;
+}
+@media screen and (max-width: 1200px) {
+  .aboutme__descrip {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .aboutme__descrip {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+  }
+}
+.aboutme__photo {
+  width: 35%;
+  height: 100%;
+}
+@media screen and (max-width: 915px) {
+  .aboutme__photo {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+.photo {
+  width: 300px;
+  height: 300px;
+  margin: 10px auto;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+@media screen and (max-width: 1200px) {
+  .photo {
+    width: 240px;
+    height: 240px;
+  }
+}
+@media screen and (max-width: 915px) {
+  .photo {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .photo {
+    width: 240px;
+    height: 240px;
+  }
+}
+.photo__img {
+  width: 100%;
+  position: absolute;
+  top: -110px;
+}
+
+.photo-show {
+  display: block;
+  margin: 10px auto;
+  max-height: 95vh;
+}/*# sourceMappingURL=Aboutme.css.map */
